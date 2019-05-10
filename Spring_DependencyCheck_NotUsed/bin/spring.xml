@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+	<!-- <bean id="t1" class="com.mahesh.model.Employee"
+		dependency-check="none">
+		dependency-check="none" manaje konatahi setter injection nahi kela 
+			tari chalata.
+	</bean>
+	 -->
+	<bean id="t1" class="com.mahesh.model.Employee" dependency-check="simple">
+		<property name="empName" value="Mahesh"></property>
+	</bean>
+	
+</beans>
